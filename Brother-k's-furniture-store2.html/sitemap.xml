@@ -1,28 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tangerine-axolotl-7f34f9.netlify.app/index.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://tangerine-axolotl-7f34f9.netlify.app/about.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tangerine-axolotl-7f34f9.netlify.app/services.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tangerine-axolotl-7f34f9.netlify.app/enquiry.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tangerine-axolotl-7f34f9.netlify.app/contact.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-</urlset>
+<?xml version="1.0" encoding="UTF-8"?> <!-- Declares the document as an XML file with UTF-8 encoding -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <!-- Root tag containing all website URLs for search engines -->
+  <!-- Brother K's Furniture Store Sitemap --> <!-- General comment for the sitemap file -->
+  <url> <!-- Opens a container for the first website page entry -->
+    <loc>https://tangerine-axolotl-7f34f9.netlify.app/index.html</loc> <!-- Defines the exact URL for the home page -->
+    <lastmod>2026-11-02</lastmod> <!-- Specifies the date when the home page was last modified -->
+    <priority>1.00</priority> <!-- Sets the highest priority rating for the home page search ranking -->
+  </url> <!-- Closes the container for the home page entry -->
+  <url> <!-- Opens a container for the second website page entry -->
+    <loc>https://tangerine-axolotl-7f34f9.netlify.app/about.html</loc> <!-- Defines the exact URL for the about page -->
+    <lastmod>2026-11-02</lastmod> <!-- Specifies the date when the about page was last modified -->
+    <priority>0.80</priority> <!-- Sets a high priority rating for the about page search ranking -->
+  </url> <!-- Closes the container for the about page entry -->
+  <url> <!-- Opens a container for the third website page entry -->
+    <loc>https://tangerine-axolotl-7f34f9.netlify.app/services.html</loc> <!-- Defines the exact URL for the services page -->
+    <lastmod>2026-11-02</lastmod> <!-- Specifies the date when the services page was last modified -->
+    <priority>0.80</priority> <!-- Sets a high priority rating for the services page search ranking -->
+  </url> <!-- Closes the container for the services page entry -->
+  <url> <!-- Opens a container for the fourth website page entry -->
+    <loc>https://tangerine-axolotl-7f34f9.netlify.app/enquiry.html</loc> <!-- Defines the exact URL for the enquiry page -->
+    <lastmod>2026-11-02</lastmod> <!-- Specifies the date when the enquiry page was last modified -->
+    <priority>0.80</priority> <!-- Sets a high priority rating for the enquiry page search ranking -->
+  </url> <!-- Closes the container for the enquiry page entry -->
+  <url> <!-- Opens a container for the fifth website page entry -->
+    <loc>https://tangerine-axolotl-7f34f9.netlify.app/contact.html</loc> <!-- Defines the exact URL for the contact page -->
+    <lastmod>2026-11-02</lastmod> <!-- Specifies the date when the contact page was last modified -->
+    <priority>0.80</priority> <!-- Sets a high priority rating for the contact page search ranking -->
+  </url> <!-- Closes the container for the contact page entry -->
+</urlset> <!-- Closes the root urlset container -->
