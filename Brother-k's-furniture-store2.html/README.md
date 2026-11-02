@@ -88,6 +88,14 @@ W3Schools. (2026). JavaScript Form Validation. W3Schools Online Web Tutorials. A
 
 [Desktop View](screenshots/desktop.png)
 
+https://github.com/kabelo-onuoha17/Brother-K-s-Furniture-Store-Portfolio/blob/main/Brother-k's-furniture-store2.html/Screenshots/Desktop.png
+
+
+https://github.com/kabelo-onuoha17/Brother-K-s-Furniture-Store-Portfolio/blob/main/Brother-k's-furniture-store2.html/Screenshots/Mobile.png
+
+
+https://github.com/kabelo-onuoha17/Brother-K-s-Furniture-Store-Portfolio/blob/main/Brother-k's-furniture-store2.html/Screenshots/Tablet.png
+
 
 
 
