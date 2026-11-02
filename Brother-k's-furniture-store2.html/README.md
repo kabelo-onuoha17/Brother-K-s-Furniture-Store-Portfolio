@@ -9,7 +9,6 @@ Student Number: ST10527249
 
 Module Code: WEDES020 
 
-Institution: The Independent Institute of Education 
 
 Live Deployment URL: https://tangerine-axolotl-7f34f9.netlify.app/
 
