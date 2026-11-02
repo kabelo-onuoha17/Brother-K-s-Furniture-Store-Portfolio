@@ -1,9 +1,9 @@
-/* Simple English Comments - Line by Line JavaScript */
+
 
 // Wait for the HTML page to finish loading before running any scripts
 document.addEventListener("DOMContentLoaded", function () {
 
-    //  SECTION 1: CLIENT-SIDE FORM VALIDATION 
+    //   SECTION 1: CLIENT-SIDE FORM VALIDATION 
 
     // Find the enquiry and contact forms on the page
     const enquiryForm = document.querySelector("form");
@@ -92,6 +92,27 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
+
+    // --- SECTION 3: INTERACTIVE LEAFLET MAP ---
+
+    // Find the map container element on the page
+    const mapContainer = document.getElementById("map");
+
+    // Only run map initialization if the map container exists
+    if (mapContainer) {
+        // Initialize the Leaflet map with coordinates (e.g., Johannesburg area) and zoom level
+        const map = L.map('map').setView([-26.2041, 28.0473], 13);
+
+        // Add OpenStreetMap tile layer styling
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add a custom marker with a popup for Brother K's Furniture Store
+        L.marker([-26.2041, 28.0473]).addTo(map)
+            .bindPopup("Brother K's Furniture Store")
+            .openPopup();
+    }
 
     // Output status log to browser developer console
     console.log("Brother K's Furniture Store - Part 3 JavaScript features loaded successfully.");
