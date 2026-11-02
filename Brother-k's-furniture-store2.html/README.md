@@ -87,3 +87,7 @@ The Independent Institute of Education. (2026). Web Development Introduction 1 [
 W3Schools. (2026). JavaScript Form Validation. W3Schools Online Web Tutorials. Available at: https://www.w3schools.com/js/js_validation.asp
 
 [Desktop View](screenshots/desktop.png)
+
+
+
+
