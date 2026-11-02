@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Defines document as HTML5 -->
+<html lang="en"> <!-- Sets language to English -->
+<head> <!-- Begins document head settings -->
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets responsive scaling for screens -->
+    
+    <!-- On-Page SEO Optimization Tags (Part 3) -->
+    <meta name="description" content="Submit a custom furniture enquiry or quote request to Brother K's Furniture Store in Maboneng. We reply within 24 hours."> <!-- SEO page description -->
+    <meta name="keywords" content="custom furniture quote, furniture enquiry Johannesburg, order handmade tables, Maboneng furniture store form"> <!-- SEO target keywords -->
+    <meta name="author" content="Kabelo Onuoha"> <!-- Author metadata -->
+    <meta name="robots" content="index, follow"> <!-- Instructs search engine crawlers to index page -->
+
+    <title>Enquiry | Brother K's Furniture</title> <!-- Sets browser tab title -->
+    <link rel="stylesheet" href="style.css"> <!-- Links external CSS file -->
+</head> <!-- Closes head element -->
+<body> <!-- Begins page visible content -->
+
+    <header> <!-- Begins top site header section -->
+        <img src="logo.png" alt="Brother K Furniture Store Logo"> <!-- Displays store logo image -->
+        <nav> <!-- Begins navigation link area -->
+            <a href="index.html">Home</a> <!-- Link to home page -->
+            <a href="about.html">About Us</a> <!-- Link to about page -->
+            <a href="services.html">Products</a> <!-- Link to products page -->
+            <a href="enquiry.html">Enquiry</a> <!-- Link to enquiry page -->
+            <a href="contact.html">Contact</a> <!-- Link to contact page -->
+        </nav> <!-- Closes navigation link area -->
+    </header> <!-- Closes top header section -->
+
+    <main> <!-- Begins main body content area -->
+        <section> <!-- Begins enquiry form section -->
+            <h1>Send Us an Enquiry</h1> <!-- Main page title -->
+            <p>Fill in the form below. We will reply within 24 hours.</p> <!-- Help instructions text -->
+
+            <form action="#" method="post"> <!-- Begins interactive HTML form -->
+                <h2>Your Details</h2> <!-- Subheading for personal info -->
+                
+                <label for="name">Name:</label> <!-- Label connected to name field -->
+                <input type="text" id="name" name="name" required placeholder="Enter full name"> <!-- Name input field -->
+
+                <label for="email">Email:</label> <!-- Label connected to email field -->
+                <input type="email" id="email" name="email" required placeholder="name@example.com"> <!-- Email input field -->
+
+                <label for="phone">Phone:</label> <!-- Label connected to phone field -->
+                <input type="tel" id="phone" name="phone" required placeholder="011 234 5678"> <!-- Phone input field -->
+
+                <h2>Enquiry Details</h2> <!-- Subheading for request options -->
+                
+                <label for="type">Enquiry Type:</label> <!-- Label for dropdown choice -->
+                <select id="type" name="type" required> <!-- Dropdown select field -->
+                    <option value="">Select Option</option> <!-- Default empty option -->
+                    <option value="delivery">Delivery</option> <!-- Dropdown selection item -->
+                    <option value="bulk">Bulk Order</option> <!-- Dropdown selection item -->
+                    <option value="custom">Custom Size</option> <!-- Dropdown selection item -->
+                    <option value="general">General Question</option> <!-- Dropdown selection item -->
+                </select> <!-- Closes select element -->
+
+                <label for="product">Product:</label> <!-- Label for product selection -->
+                <select id="product" name="product"> <!-- Product choice dropdown menu -->
+                    <option value="">Select Product</option> <!-- Default option -->
+                    <option value="dining">Dining Table</option> <!-- Option item -->
+                    <option value="coffee">Coffee Table</option> <!-- Option item -->
+                    <option value="kitchen">Kitchen Unit</option> <!-- Option item -->
+                    <option value="outdoor">Outdoor Furniture</option> <!-- Option item -->
+                </select> <!-- Closes product select dropdown -->
+
+                <label for="message">Message:</label> <!-- Label for message box -->
+                <textarea id="message" name="message" rows="5" placeholder="Write your request here..."></textarea> <!-- Multi-line text input -->
+
+                <button type="submit">Submit Enquiry</button> <!-- Form submit action button -->
+            </form> <!-- Closes interactive HTML form -->
+        </section> <!-- Closes enquiry form section -->
+    </main> <!-- Closes main content area -->
+
+    <footer> <!-- Begins site footer section -->
+        <p>14 Main Street, Maboneng, Johannesburg | Phone: 011 234 5678</p> <!-- Address and contact details -->
+        <p>&copy; 2026 Brother K's Furniture Store</p> <!-- Copyright notice -->
+    </footer> <!-- Closes site footer section -->
+
+    <!-- Links external JavaScript file for interactivity and validation -->
+    <script src="script.js"></script>
+</body> <!-- Closes page body -->
+</html> <!-- Closes HTML document -->

@@ -1,0 +1,337 @@
+/* Select all elements, including pseudo-elements */
+*, *::before, *::after {
+    box-sizing: border-box; /* Includes padding and borders in total width */
+    margin: 0; /* Removes default outer spacing */
+    padding: 0; /* Removes default inner spacing */
+}
+
+/* Root block for global CSS variables */
+:root {
+    --primary-color: #5c3a21; /* Dark wood brown tone */
+    --secondary-color: #a0522d; /* Warm light brown tone */
+    --accent-color: #d2b48c; /* Soft tan color */
+    --dark-text: #2c2c2c; /* Off-black for body text */
+    --light-bg: #f9f6f0; /* Off-white page background */
+    --white: #ffffff; /* Pure white color */
+    --border-color: #dddddd; /* Light gray for borders */
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean system font stack */
+    --base-font-size: 1rem; /* Base text size equal to 16px */
+}
+
+/* Base HTML page configuration */
+html {
+    font-size: 100%; /* Sets standard text scale */
+    scroll-behavior: smooth; /* Enables smooth scrolling on click */
+}
+
+/* Main body styling */
+body {
+    font-family: var(--font-main); /* Applies primary font family */
+    font-size: var(--base-font-size); /* Applies standard body text size */
+    line-height: 1.6; /* Sets comfortable line height */
+    color: var(--dark-text); /* Sets main text color */
+    background-color: var(--light-bg); /* Sets overall page background color */
+    display: flex; /* Enables flexbox layout for page structure */
+    flex-direction: column; /* Stacks contents top to bottom */
+    min-height: 100vh; /* Keeps footer at bottom of full screen */
+}
+
+/* Heading tags styling */
+h1, h2, h3, h4 {
+    color: var(--primary-color); /* Sets heading text color */
+    font-weight: 700; /* Makes headings bold */
+    line-height: 1.2; /* Tightens heading line spacing */
+    margin-bottom: 0.75rem; /* Adds space below headings */
+}
+
+/* Specific heading text sizes */
+h1 { font-size: 2.25rem; letter-spacing: -0.5px; } /* Large title size with tight spacing */
+h2 { font-size: 1.75rem; margin-top: 1.5rem; } /* Section heading size with top margin */
+h3 { font-size: 1.25rem; } /* Sub-heading size */
+
+/* Standard paragraph styling */
+p {
+    margin-bottom: 1rem; /* Adds space below text paragraphs */
+    color: #444444; /* Sets slightly lighter text color */
+}
+
+/* Base link styling */
+a {
+    color: var(--secondary-color); /* Sets link text color */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smoothly changes color on hover */
+}
+
+/* Link hover state */
+a:hover {
+    color: var(--primary-color); /* Changes link color on hover */
+}
+
+/* Header container styling */
+header {
+    background-color: var(--primary-color); /* Sets header background color */
+    padding: 1rem 2rem; /* Adds internal spacing top/bottom and left/right */
+    display: flex; /* Turns header into flex container */
+    justify-content: space-between; /* Spreads logo and navigation apart */
+    align-items: center; /* Vertically centers logo and links */
+    box-shadow: var(--shadow); /* Adds drop shadow underneath header */
+    position: sticky; /* Keeps header visible at top while scrolling */
+    top: 0; /* Sticks header to top edge */
+    z-index: 1000; /* Keeps header above other content */
+}
+
+/* Header logo image styling */
+header img {
+    height: 50px; /* Sets fixed logo height */
+    width: auto; /* Keeps image proportions correct */
+}
+
+/* Navigation container */
+nav {
+    display: flex; /* Sets navigation links side by side */
+    gap: 1rem; /* Adds spacing between links */
+}
+
+/* Individual navigation link styling */
+nav a {
+    color: var(--white); /* Sets nav text to white */
+    font-weight: 600; /* Makes nav links semi-bold */
+    padding: 0.5rem 0.75rem; /* Adds click target area inside links */
+    border-radius: 4px; /* Rounds link corners slightly */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth interaction transition */
+}
+
+/* Navigation hover and focus states */
+nav a:hover, nav a:focus {
+    background-color: var(--secondary-color); /* Adds background color on hover */
+    color: var(--white); /* Keeps text white on hover */
+}
+
+/* Navigation active press state */
+nav a:active {
+    transform: scale(0.98); /* Slightly shrinks link when clicked */
+}
+
+/* Main page area wrapper */
+main {
+    max-width: 1200px; /* Sets maximum layout width */
+    width: 90%; /* Keeps margin spacing on smaller screens */
+    margin: 2rem auto; /* Centers main box on screen with top/bottom space */
+    flex: 1; /* Pushes footer down on short pages */
+}
+
+/* White card containers */
+.card-container, section {
+    background-color: var(--white); /* Sets background to white */
+    padding: 1.5rem; /* Adds inner box padding */
+    margin-bottom: 1.5rem; /* Adds space below section boxes */
+    border-radius: 8px; /* Rounds section corners */
+    box-shadow: var(--shadow); /* Adds light drop shadow */
+}
+
+/* Flexible grid wrapper for items */
+.product-grid, .team-grid {
+    display: flex; /* Enables flexbox grid */
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    gap: 1.5rem; /* Adds equal spacing between cards */
+    justify-content: space-between; /* Spreads items evenly */
+}
+
+/* Individual grid box styling */
+.grid-item {
+    flex: 1 1 calc(33.333% - 1.5rem); /* Fits 3 items per row on large screens */
+    background: var(--white); /* Sets item box color to white */
+    border: 1px solid var(--border-color); /* Adds subtle outline border */
+    border-radius: 6px; /* Rounds box corners */
+    padding: 1rem; /* Adds inner box padding */
+    text-align: center; /* Centers text inside card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect transition */
+}
+
+/* Grid item hover effect */
+.grid-item:hover {
+    transform: translateY(-5px); /* Lifts card slightly upward on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12); /* Increases shadow on hover */
+}
+
+/* Responsive image defaults */
+img {
+    max-width: 100%; /* Keeps images inside parent container width */
+    height: auto; /* Keeps image aspect ratio correct */
+    border-radius: 4px; /* Rounds image corners slightly */
+    display: block; /* Removes baseline spacing under image */
+}
+
+/* Button element styles */
+.btn, button[type="submit"] {
+    display: inline-block; /* Allows width/height styling on links */
+    background-color: var(--secondary-color); /* Sets button background color */
+    color: var(--white); /* Sets button text color */
+    padding: 0.75rem 1.5rem; /* Adds padding inside button */
+    border: none; /* Removes default input border */
+    border-radius: 4px; /* Rounds button corners */
+    font-size: 1rem; /* Sets readable text size */
+    font-weight: 600; /* Sets text weight to bold */
+    cursor: pointer; /* Changes mouse cursor to pointer hand */
+    text-align: center; /* Centers text in button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color change on hover */
+}
+
+/* Button hover state */
+.btn:hover, button[type="submit"]:hover {
+    background-color: var(--primary-color); /* Darkens button color on hover */
+}
+
+/* Button click state */
+.btn:active, button[type="submit"]:active {
+    transform: scale(0.97); /* Shrinks button slightly when clicked */
+}
+
+/* Form tag styling */
+form {
+    background-color: var(--white); /* Sets form box to white */
+    padding: 2rem; /* Adds inner box padding */
+    border-radius: 8px; /* Rounds box corners */
+    box-shadow: var(--shadow); /* Adds drop shadow around form */
+    max-width: 600px; /* Limits form maximum width */
+    margin: 0 auto; /* Centers form horizontally */
+}
+
+/* Form input label styling */
+label {
+    font-weight: 600; /* Makes label text bold */
+    display: block; /* Forces label onto its own line */
+    margin-bottom: 0.25rem; /* Adds space under label */
+}
+
+/* Form text field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%; /* Makes fields stretch full width of form */
+    padding: 0.75rem; /* Adds space inside input fields */
+    border: 1px solid var(--border-color); /* Sets thin border line */
+    border-radius: 4px; /* Rounds input field corners */
+    font-size: 1rem; /* Sets comfortable text size */
+    margin-bottom: 1rem; /* Adds space below input fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth outline transition */
+}
+
+/* Input field active selection state */
+input:focus, select:focus, textarea:focus {
+    outline: none; /* Removes default browser focus outline */
+    border-color: var(--secondary-color); /* Highlights field border color */
+    box-shadow: 0 0 5px rgba(160, 82, 45, 0.4); /* Adds soft glow around active field */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Stretches table across full parent width */
+    border-collapse: collapse; /* Merges table borders together */
+    margin-top: 1rem; /* Adds top space above table */
+}
+
+/* Table cell spacing and border */
+th, td {
+    padding: 0.75rem 1rem; /* Adds inner spacing inside table cells */
+    border: 1px solid var(--border-color); /* Draws cell border lines */
+    text-align: left; /* Aligns text to left side */
+}
+
+/* Table header row styling */
+th {
+    background-color: var(--primary-color); /* Sets header background color */
+    color: var(--white); /* Sets header text to white */
+}
+
+/* Alternating table row background */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Sets soft gray color on even rows */
+}
+
+/* Map frame responsiveness */
+iframe {
+    width: 100%; /* Makes map fill container width */
+    border: 0; /* Removes default frame border */
+    border-radius: 8px; /* Rounds map corners */
+    box-shadow: var(--shadow); /* Adds shadow around map */
+}
+
+/* Page footer layout */
+footer {
+    background-color: var(--primary-color); /* Sets dark brown background */
+    color: var(--white); /* Sets main footer text to white */
+    text-align: center; /* Centers footer text */
+    padding: 1.5rem; /* Adds spacing inside footer */
+    margin-top: auto; /* Keeps footer pushed to bottom */
+}
+
+/* Footer paragraph color */
+footer p {
+    color: var(--accent-color); /* Sets secondary footer text color */
+    margin-bottom: 0.25rem; /* Reduces spacing under footer text */
+}
+
+/* Responsive screen rule for tablets */
+@media screen and (max-width: 768px) {
+    /* Stack header contents vertically on tablets */
+    header {
+        flex-direction: column; /* Positions logo above navigation */
+        gap: 1rem; /* Adds spacing between logo and menu */
+    }
+
+    /* Adjust navigation bar layout */
+    nav {
+        flex-wrap: wrap; /* Allows menu links to wrap if needed */
+        justify-content: center; /* Centers menu links */
+    }
+
+    /* Scale down font sizes on small screens */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+
+    /* Switch grid layout from 3 columns to 2 columns */
+    .grid-item {
+        flex: 1 1 calc(50% - 1.5rem); /* Fits 2 items per row */
+    }
+}
+
+/* Responsive screen rule for mobile phones */
+@media screen and (max-width: 480px) {
+    /* Scale body font size down slightly */
+    body {
+        font-size: 0.95rem; /* Shrinks text slightly for mobile screens */
+    }
+
+    /* Adjust mobile header spacing */
+    header {
+        padding: 0.75rem; /* Cuts header padding down */
+    }
+
+    /* Turn menu into full vertical stack */
+    nav {
+        flex-direction: column; /* Stacks menu links vertically */
+        width: 100%; /* Expands menu full width */
+        text-align: center; /* Centers menu items */
+    }
+
+    /* Mobile menu button styling */
+    nav a {
+        display: block; /* Makes full menu link clickable */
+        padding: 0.5rem; /* Increases tap target size */
+        background-color: rgba(255, 255, 255, 0.1); /* Adds slight block background */
+    }
+
+    /* Switch grid layout to 1 column on mobile */
+    .grid-item {
+        flex: 1 1 100%; /* Fits 1 item per row */
+    }
+
+    /* Adjust mobile form spacing */
+    form {
+        padding: 1rem; /* Reduces inner form padding on mobile screens */
+    }
+}
